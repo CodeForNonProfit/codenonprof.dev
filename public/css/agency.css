@@ -637,13 +637,25 @@ aside.clients img {
 
 section#contact {
     background-color: #222;
-    background-image: url(../img/map-image.png);
+    /*background-image: url(../img/map-image.png);*/
     background-position: center;
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
+    height: 440px;
+    padding: 10px;
 }
 
 section#contact .section-heading {
-    color: #fff
+    color: #fff;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+h3.section-subheading {
+    margin-bottom: 5px;
+}
+
+#contact-title {
+    height: 130px;
 }
 
 section#contact .form-group {
@@ -656,11 +668,11 @@ section#contact .form-group textarea {
 }
 
 section#contact .form-group input.form-control {
-    height: auto
+    height: 50px;
 }
 
 section#contact .form-group textarea.form-control {
-    height: 236px
+    height: 150px
 }
 
 section#contact .form-control:focus {
@@ -698,6 +710,16 @@ section#contact:-ms-input-placeholder {
 
 section#contact .text-danger {
     color: #e74c3c
+}
+
+label {
+    color: white;
+    margin-left: 15px;
+}
+
+#subject {
+   height: 100px;
+   font-size: 15px;
 }
 
 footer {

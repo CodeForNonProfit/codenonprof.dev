@@ -94,17 +94,17 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">How Do You Want To Get Involved?</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h3 class="section-subheading text-muted">We can all work together to build brighter futures.</h3>
                 </div>
             </div>
             <div class="row text-center">
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                        <i class="fa fa-heart fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Non-Profit</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <p class="text-muted">Know of a non-profit organization that could benefit from a new website? Let us know. We would love to add their site to our Projects for developers to review.</p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
@@ -112,7 +112,7 @@
                         <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Develop</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <p class="text-muted">Are you a developer looking to build your portfolio? Maybe you want to donate your skills and time to helping a non-profit. Many non-profit organizations have little funds to spend on web-site updaetes. Your skills and time would be greatly appreciated.</p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
@@ -120,7 +120,7 @@
                         <i class="fa fa-credit-card fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Donate</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <p class="text-muted">This site can't maintain itself.  Help us continue to build brighter futures for non-profit organizations by donating.  All donated funds will be used for site maintenance and upgrades.</p>
                 </div>
             </div>
         </div>
@@ -226,8 +226,8 @@
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about">
+    <!-- About Section hidden for now-->
+    <!-- <section id="about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -305,10 +305,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
-    <!-- Team Section -->
-    <section id="team" class="bg-light-gray">
+    <!-- Team Section hidden for now -->
+    <!-- <section id="team" class="bg-light-gray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -369,10 +369,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
-    <!-- Clients Aside -->
-    <aside class="clients">
+    <!-- Clients Aside hidden for now-->
+    <!-- <aside class="clients">
         <div class="container">
             <div class="row">
                 <div class="col-md-3 col-sm-6">
@@ -397,15 +397,15 @@
                 </div>
             </div>
         </div>
-    </aside>
+    </aside> -->
     
     <!-- Contact Section -->
     <section id="contact">
         <div class="container">
-            <div class="row">
+            <div class="row" id="contact-title">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Contact Us</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading">Send us a note!</h2>
+                    <h3 class="section-subheading text-muted">We promise your email will not go into the unknown.</h3>
                 </div>
             </div>
             <div class="row">
@@ -426,6 +426,14 @@
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
+                            <div class="form-group">
+                                <label for="subject">What are you contacting us about?</label>
+                                <select id="subject" name="subject">
+                                    <option>I want to nominate a non-profit organization</option>
+                                    <option>I am a developer; I want to donate my skills!</option>
+                                    <option>I want to donate, but I have some questions</option>
+                                    <option>I would like to speak with a team member</option>
+                                </select>           
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <textarea class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
@@ -435,7 +443,7 @@
                             <div class="clearfix"></div>
                             <div class="col-lg-12 text-center">
                                 <div id="success"></div>
-                                <button type="submit" class="btn btn-xl">Send Message</button>
+                                <button type="submit" id="submit-email" class="btn btn-sm btn-primary">Send Message</button>
                             </div>
                         </div>
                     </form>
