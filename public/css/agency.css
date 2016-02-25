@@ -424,7 +424,42 @@ section h3.section-subheading {
     }
 }
 
-.timeline {
+/* About */
+ #about {
+    padding: 10px;
+ }
+
+#lightbulb {
+    /*margin-top: 475px;*/
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+#gears {
+    /*margin-top: 425px;*/
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+#cog {
+    font-size: 300px;
+    padding: 0px;
+    margin: 0px;
+}
+
+#search {
+    margin-top: -175px;
+    margin-left: 10px;
+    padding-top: 0px;
+}
+
+#users {
+    margin-top: -340px;
+    margin-left: 625px;
+    padding-top: 0px;
+}
+
+/*.timeline {
     list-style: none;
     padding: 0;
     position: relative
@@ -609,7 +644,7 @@ section h3.section-subheading {
     .timeline>li.timeline-inverted>.timeline-panel {
         padding: 0 100px 20px 20px
     }
-}
+}*/
 
 .team-member {
     text-align: center;
@@ -634,6 +669,9 @@ section h3.section-subheading {
 aside.clients img {
     margin: 50px auto
 }
+
+
+/* Contact Us*/
 
 section#contact {
     background-color: #222;
