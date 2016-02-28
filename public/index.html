@@ -65,9 +65,9 @@
                     <li>
                         <a class="page-scroll" href="#about">About</a>
                     </li>
-                    <li>
+                    <!-- <li>
                         <a class="page-scroll" href="#team">Team</a>
-                    </li>
+                    </li> -->
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
@@ -122,10 +122,13 @@
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-credit-card fa-stack-1x fa-inverse"></i>
+                        <a href="#aboutModal3" data-toggle="modal" data-target="#aboutModal3">
+                            <i class="fa fa-credit-card fa-stack-1x fa-inverse"></i>
+                        </a>    
                     </span>
                     <h4 class="service-heading">Donate</h4>
-                    <p class="text-muted">This site can't maintain itself.  Help us continue to build brighter futures for non-profit organizations by donating.  All donated funds will be used for site maintenance and upgrades.</p>
+                    <p class="text-muted">This site can't maintain itself.  Help us continue to build brighter futures for non-profit organizations by donating.  All donated funds will be used for site maintenance and upgrades.
+                    </p>
                 </div>
             </div>
         </div>
@@ -137,7 +140,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Current Projects</h2>
-                    <h3 class="section-subheading text-muted">These projects have been submitted by a non-profit organization for building </h3>
+                    <h3 class="section-subheading text-muted">Nonprofit Organizations in need of high quality web-design services</h3>
                 </div>
             </div>
             <div class="row">
@@ -536,16 +539,16 @@
                                     <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required data-validation-required-message="Please enter your phone number.">
                                     <p class="help-block text-danger"></p>
                                 </div>
-                            </div>
-                            <div class="form-group">
+                            </div>                                   
+                            <div class="col-md-6">
+                                <div class="form-group">
                                 <label for="subject">What are you contacting us about?</label>
-                                <select id="subject" name="subject">
+                                <select  class="form-control" id="subject" name="subject">
                                     <option>I want to nominate a non-profit organization</option>
                                     <option>I am a developer; I want to donate my skills!</option>
                                     <option>I want to donate, but I have some questions</option>
                                     <option>I would like to speak with a team member</option>
-                                </select>           
-                            <div class="col-md-6">
+                                </select>  
                                 <div class="form-group">
                                     <textarea class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
                                     <p class="help-block text-danger"></p>
@@ -842,7 +845,7 @@
         </div>
     </div>
 
-
+     <!--Services/About Modals -->
     <!-- About Modal 1 -->
     <div class="about-modal modal fade" id="aboutModal1" tabindex="-1" role="dialog">
         <div class="modal-dialog">
@@ -904,7 +907,33 @@
                 </div>
              </div>                              
         </div> 
-
+        <!-- About Modal 3 -->
+        <div class="about-modal modal fade" id="aboutModal3" tabindex="-1" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Ready to donate?</h4>
+                        <p>We Make it easy. Donate by credit card, debit card or use your PayPal account.</p>
+                    </div>
+                    <div class="modal-body">
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                            <input type="hidden" name="cmd" value="_donations">
+                            <input type="hidden" name="business" value="hollyanbryant@gmail.com">
+                            <input type="hidden" name="lc" value="US">
+                            <input type="hidden" name="no_note" value="0">
+                            <input type="hidden" name="currency_code" value="USD">
+                            <input type="hidden" name="bn" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHostedGuest">
+                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Send</button>
+                    </div>
+                </div>
+             </div>                              
+        </div> 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
