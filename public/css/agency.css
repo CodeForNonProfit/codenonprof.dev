@@ -75,12 +75,24 @@ h6 {
     font-weight: 300
 }
 
-.fa-inverse:hover,
+
+/*COMMENTED OUT BECAUSE WE DON'T WANT HOVE EFFECT ON 'ABOUT' ICONS*/
+
+/*.fa-inverse:hover,
 .fa-inverse:focus,
 .fa-inverse:active,
 .fa-inverse.active {
     background-color:#fff;
-    color: #458b00;
+    color: #458B00;
+    transition: all .3s;
+}*/
+
+.involved:hover,
+.involved:focus,
+.involved:active,
+.involved.active {
+    background-color:#fff;
+    color: #458B00;
     transition: all .3s;
 }
 
@@ -92,7 +104,7 @@ h6 {
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
     color: #fff;
-    background-color: #458B00;
+    background-color: #000;
     /*border-color: #f6bf01*/
     /* BLUE COLOR ON HOVER - UNABLE TO CHANGE NOT IN CSS*/
 }
