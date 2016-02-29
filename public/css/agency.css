@@ -93,7 +93,8 @@ h6 {
 .open .dropdown-toggle.btn-primary {
     color: #fff;
     background-color: #458B00;
-    border-color: #f6bf01
+    /*border-color: #f6bf01*/
+    /* BLUE COLOR ON HOVER - UNABLE TO CHANGE NOT IN CSS*/
 }
 
 .btn-primary:active,
@@ -473,12 +474,14 @@ section h3.section-subheading {
     font-size: 300px;
     padding: 0px;
     margin: 0px;
+    display: block;
 }
 
 #search {
     margin-top: -175px;
     margin-left: 10px;
     padding-top: 0px;
+    float:left;
 }
 
 #users {
