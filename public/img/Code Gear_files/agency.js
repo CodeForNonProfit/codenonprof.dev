@@ -4,18 +4,6 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
- // mix it up jQuery
-
-
-
-$(function(){
-
-	// Instantiate MixItUp:
-	
-	$('#mix-it-up2').mixItUp();
-
-});
-
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
     $('a.page-scroll').bind('click', function(event) {
