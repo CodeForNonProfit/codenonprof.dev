@@ -417,7 +417,9 @@
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-credit-card fa-stack-1x fa-inverse involved"></i>
+                        <a href="#aboutModal3" data-toggle="modal" data-target="#aboutModal3">
+                            <i class="fa fa-credit-card fa-stack-1x fa-inverse involved"></i>
+                        </a>    
                     </span>
                     <h4 class="service-heading">Donate</h4>
                     <p class="text-muted">This site can't maintain itself.  Help us continue to build brighter futures for non-profit organizations by donating.  All donated funds will be used for site maintenance and upgrades.</p>
@@ -861,27 +863,28 @@
                     <h4 class="modal-title">Nominate a nonprofit!</h4>
                 </div>
                 <div class="modal-body">
-                    <form role="form">
+                    <form role="form" class="contact">
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Your Name *" id="about-name" required data-validation-required-message="Please enter your name.">
+                            <input type="text" class="form-control" name="name" placeholder="Your Name *" id="about-name" required data-validation-required-message="Please enter your name.">
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Your Email *" id="about-email" required data-validation-required-message="Please enter your email address.">
+                            <input type="email" class="form-control" name="email" placeholder="Your Email *" id="about-email" required data-validation-required-message="Please enter your email address.">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Nonprofit name *" id="nonprofit-name" required data-validation-required-message="Please enter your phone number.">
+                            <input type="text" class="form-control" name="nominate" placeholder="Nonprofit name *" id="nonprofit-name" required data-validation-required-message="Please enter your phone number.">
                         </div>
                         <div class="form-group">
-                                    <textarea class="form-control" placeholder="Your Message *" id="about-message" required data-validation-required-message="Please enter a message."></textarea>
+                                    <textarea class="form-control" name="message" placeholder="Your Message *" id="about-message" required data-validation-required-message="Please enter a message."></textarea>
                         </div>            
                     </form>    
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Send</button>
+                    <button type="button" class="btn btn-default" id="nominateModal" data-dismiss="modal">Send</button>
                 </div>
             </div>
          </div>                              
-    </div>    
+    </div> 
+    <div id="thanks"><p><a data-toggle="modal" href="#aboutModal1" class="btn btn-success btn-sm">Modal powers, activate!</a></p></div>   
 
 <!-- About Modal 2 -->
     <div class="about-modal modal fade" id="aboutModal2" tabindex="-1" role="dialog">

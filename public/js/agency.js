@@ -24,3 +24,20 @@ $('body').scrollspy({
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
+
+$(document).ready(function() {
+	$('#nominateModal').click (function() {
+		$.ajax({
+			type: "POST",
+			url: "/process.php",
+			data: $('form.contact').serialize(),
+			success: function(msg) {
+				$('#thanks').html
+				$('#aboutModal1').modal('hide');
+			},
+			error: function() {
+				alert("failure");
+			}
+		});
+	});
+});
