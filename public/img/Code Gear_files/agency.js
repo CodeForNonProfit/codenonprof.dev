@@ -4,18 +4,6 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
- // mix it up jQuery
-
-
-
-$(function(){
-
-	// Instantiate MixItUp:
-	
-	$('#mix-it-up2').mixItUp();
-
-});
-
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
     $('a.page-scroll').bind('click', function(event) {
@@ -35,21 +23,4 @@ $('body').scrollspy({
 // Closes the Responsive Menu on Menu Item Click
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
-});
-
-$(document).ready(function() {
-	$('#nominateModal').click (function() {
-		$.ajax({
-			type: "POST",
-			url: "/process.php",
-			data: $('form.contact').serialize(),
-			success: function(msg) {
-				$('#thanks').html
-				$('#aboutModal1').modal('hide');
-			},
-			error: function() {
-				alert("failure");
-			}
-		});
-	});
 });
