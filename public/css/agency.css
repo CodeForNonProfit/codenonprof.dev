@@ -310,13 +310,14 @@ header {
     -o-background-size: cover;
     text-align: center;
     color: #fff;
+    text-shadow: -.5px -.5px #458B00;
 }
 
 header .intro-text {
     padding-top: 100px;
     padding-bottom: 50px;
     color: #fff;
-    text-shadow: #458B00;
+    text-shadow: -.5px -.5px #458B00;
 }
 
 header .intro-text .intro-lead-in {
@@ -325,7 +326,8 @@ header .intro-text .intro-lead-in {
     font-size: 2em;
     font-weight: 300;
     line-height: 22px;
-    margin-bottom: 25px
+    margin-bottom: 25px;
+    text-shadow: -.5px -.5px #458B00;
 }
 
 header .intro-text .intro-heading {
@@ -334,7 +336,8 @@ header .intro-text .intro-heading {
     font-weight: 400;
     font-size: 50px;
     line-height: 50px;
-    margin-bottom: 25px
+    margin-bottom: 25px;
+    text-shadow: -.5px -.5px #458B00;
 }
 
 @media (min-width:768px) {
@@ -346,8 +349,8 @@ header .intro-text .intro-heading {
         font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-style: italic;
         font-size: 3em;
-        color: #458B00;
-        text-shadow: -.5px -.5px #fff;
+        color: #fff;
+        text-shadow: -.5px -.5px #458B00;
         line-height: 40px;
         margin-bottom: 25px
     }
@@ -356,8 +359,8 @@ header .intro-text .intro-heading {
         /*text-transform: uppercase;*/
         font-weight: 300;
         font-size: 65px;
-        color: #458B00;
-        text-shadow: -.5px -.5px #fff;
+        color: #fff;
+        text-shadow: -.5px -.5px #458B00;
         line-height: 75px;
         margin-bottom: 50px
     }
@@ -462,7 +465,7 @@ section h3.section-subheading {
 }
 
 #portfolio .portfolio-item .portfolio-caption p {
-    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: italic;
     font-size: 16px;
     color:black;
@@ -504,12 +507,42 @@ section h3.section-subheading {
     /*margin-top: 475px;*/
     margin-bottom: 0px;
     padding-bottom: 0px;
+    padding-right: 50px;
+
 }
 
 #gears {
     /*margin-top: 425px;*/
     margin-bottom: 0px;
     padding-bottom: 0px;
+    padding-left: 60px;
+}
+
+.cog-image {
+    height: 500px;
+    width: 500px;
+    /*background-color: red;*/
+   /* background-image: url("/img/cog.png");
+    background-size: cover;*/
+    border-radius: 50%;
+    /*background-position: center;*/
+    opacity: .3;
+    float: left;
+    margin-left: 275px;
+    position: relative;
+    z-index: 1;
+}
+
+.cog2 {
+    background-image: url("/img/cog.png");
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform .8s ease-in-out;
+}
+
+.cog2:hover {
+    transform: rotate(360deg);
 }
 
 #cog {
@@ -520,16 +553,21 @@ section h3.section-subheading {
 }
 
 #search {
-    margin-top: -175px;
+    /*margin-top: -175px;*/
     margin-left: 10px;
     padding-top: 0px;
-    float:left;
+    padding-right: 70px;
+    float:right;
+    position: absolute;
+    z-index: 100;
 }
 
 #users {
-    margin-top: -340px;
-    margin-left: 625px;
+    /*margin-top: -340px;*/
+    /*margin-left: 625px;*/
     padding-top: 0px;
+    padding-left: 60px;
+    float: right;
 }
 
 /*.timeline {
