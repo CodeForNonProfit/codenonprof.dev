@@ -223,21 +223,31 @@
   
 
     <!-- Portfolio Grid Section -->
-    <section id="portfolio " class="bg-light-gray">
+    <section id="portfolio" class="bg-light-gray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Current Projects</h2>
                     <h3 class="section-subheading text-muted">Nonprofit Organizations in need of high quality web-design services</h3>
                 </div>
-                <button class="filter" data-filter="all">Show All</button>
-                <button class="filter" data-filter=".category-1">Open</button>
-                <button class="filter" data-filter=".category-2">Working</button>
-                <button class="sort" data-sort="default">Default</button>
-                <button class="sort" data-sort="my-order:asc">Ascending Order</button>
-                <button class="sort" data-sort="my-order:desc">Descending Order</button>
-                <button class="sort" data-sort="random">Random Order</button>
+                <!-- filter buttons -->
+                </div class="row proj-sort">
+                    <div class="col-md-6 col-sm-12">
+                      <!--   <h3 class="sort-filter"> Sort by status </h3> -->
+                        <div class="filter btn btn-primary btn-sm" data-filter="all">Show All</div>
+                        <div class="filter btn btn-primary btn-sm" data-filter=".category-1"> Show Open</div>
+                        <div class="filter btn btn-primary btn-sm" data-filter=".category-2">Show working</div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <!-- <h3 class="sort-filter"> Sort by date </h3> -->
+                        <!-- <div class="sort btn btn-primary btn-sm" data-sort="default">Default</div> -->
+                        <div class="sort btn btn-primary btn-sm" data-sort="my-order:asc">Oldest</div>
+                        <div class="sort btn btn-primary btn-sm" data-sort="my-order:desc">Newest</div>
+                        <div class="sort btn btn-primary btn-sm" data-sort="random">Random </div>
+                    </div>
+                </div
             </div>
+            <!-- first project -->
             <div id="mix-it-up2" class="row">
                 <div class="col-md-4 col-sm-6 portfolio-item mix category-1" data-my-order="1">
                     <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
@@ -246,11 +256,11 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/wag-sm.png" class="img-responsive" alt="wag">
-                  <!--   </a> -->
+                        <img src="img/wag-sm.png" class="img-responsive photo" alt="wag">
+                    <!-- </a> -->
                         <div class="portfolio-caption">
                             <h4>Wags4Warriors</h4>
-                            <p class="text-muted">Category:Veteran</p>
+                            <p class="text-muted">Date submitted: Jan 31, 2016</p>
                             <p class="text-muted">Status:open</p>
 
                         </div>
@@ -264,11 +274,11 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/doslocos.jpg" class="img-responsive" alt="">
+                        <img src="img/doslocos.jpg" class="img-responsive photo" alt="">
                     <!-- </a> -->
                         <div class="portfolio-caption">
                             <h4>Dos Locos Design</h4>
-                            <p class="text-muted">Category:Cancer</p>
+                            <p class="text-muted">Date submitted: Feb 3, 2016</p>
                             <p class="text-muted">Status:open</p>
                         </div>
                     </a>
@@ -281,11 +291,11 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/carver.jpg" class="img-responsive" alt="">
+                        <img src="img/carver.jpg" class="img-responsive photo" alt="">
                   <!--   </a> -->
                         <div class="portfolio-caption">
                             <h4>Alamo Area Wood Carvers</h4>
-                            <p class="text-muted">Category: Education</p>
+                            <p class="text-muted">Date submitted: Feb 4, 2016</p>
                             <p class="text-muted">Status: working</p>
                         </div>
                     </a>
@@ -300,11 +310,11 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/meals.png" class="img-responsive" alt="">
+                        <img src="img/meals.png" class="img-responsive photo" alt="">
                     <!-- </a> -->
                         <div class="portfolio-caption">
                             <h4>Meals on Wheels</h4>
-                            <p class="text-muted">Category: Service</p>
+                            <p class="text-muted">Date submitted: Feb 8, 2016</p>
                             <p class="text-muted">Status:working</p>
                         </div>
                     </a>
@@ -317,11 +327,11 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/passion.png" class="img-responsive" alt="">
+                        <img src="img/passion.png" class="img-responsive photo" alt="">
                     <!-- </a> -->
                         <div class="portfolio-caption">
                             <h4>Passion 4 Kids</h4>
-                            <p class="text-muted">Category:Children</p>
+                            <p class="text-muted">Date Submitted: Feb 15, 2016</p>
                             <p class="text-muted">Status:open</p>
                         </div>
                     </a>
@@ -334,11 +344,11 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/project.png" class="img-responsive" alt="">
+                        <img src="img/project.png" class="img-responsive photo" alt="">
                     <!-- </a> -->
                         <div class="portfolio-caption">
                             <h4>Project Quest</h4>
-                            <p class="text-muted">Category:Education</p>
+                            <p class="text-muted">Date submitted: Feb 16, 2016</p>
                             <p class="text-muted">Status:woorking</p>
                         </div>
                     </a>
@@ -353,11 +363,11 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/angels.png" class="img-responsive" alt="">
+                        <img src="img/angels.png" class="img-responsive photo" alt="">
                     <!-- </a> -->
                         <div class="portfolio-caption">
                             <h4>Adoption Angels</h4>
-                            <p class="text-muted">Category:Service</p>
+                            <p class="text-muted">Date submmitted: Feb 21, 2016</p>
                             <p class="text-muted">Status:open</p>
                         </div>
                     </a>
@@ -370,11 +380,11 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/pva.png" class="img-responsive" alt="">
+                        <img src="img/pva.png" class="img-responsive photo" alt="">
                     <!-- </a> -->
                         <div class="portfolio-caption">
                             <h4>Paralyzed Veteran's Association</h4>
-                            <p class="text-muted">Category:Service</p>
+                            <p class="text-muted">Date submitted: Feb 23, 2016</p>
                             <p class="text-muted">Status:working</p>
                         </div>
                     </a>
@@ -387,11 +397,11 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/child.png" class="img-responsive" alt="">
+                        <img src="img/child.png" class="img-responsive photo" alt="">
                     <!-- </a> -->
                         <div class="portfolio-caption">
                             <h4>Military Child Education Coalition</h4>
-                            <p class="text-muted">Category:Military</p>
+                            <p class="text-muted">Date submitted: Mar 1, 2016</p>
                             <p class="text-muted">Status:open</p>
                         </div>
                     </a>
@@ -830,7 +840,7 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <!-- Project Details Go Here -->
-                            <h2>PAralyzed Veteran's Association</h2>
+                            <h2>Paralyzed Veteran's Association</h2>
                             <p class="item-intro text-muted">Help our Heroes.</p>
                             <img class="img-responsive img-centered" src="img/portfolio/portfolio8.png" alt="">
                             <p>This site has a good foundation and just needs a little work to make it more responsive.</p>
