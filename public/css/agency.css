@@ -828,10 +828,26 @@ label {
     color: white;
     /*margin-left: 15px;*/
 }
+/*small devies (phones and tablets up to 768px) */
+@media screen and  (max-width:768px) {
+    section#contact {
+        height: 800px;
+        margin: 0 0 20px
+    }
+}
 
-#subject {
-   /*height: 100px;*/
-  /* font-size: 15px;*/
+/* devices (screen sizes between 768 and 992) */
+@media screen and  (min-width:768px) {
+    section#contact {
+        height: 700px;
+    }
+}
+
+/* devices (screen sizes 992px and up) */
+@media screen and (min-width: 992px) {
+    section#contact {
+        height: 480px;
+    }
 }
 
 footer {
