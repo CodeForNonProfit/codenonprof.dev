@@ -90,7 +90,6 @@
     </header>
 
     <!-- MOVED ABOUT SECTION UP AND SERVICES SECTION DOWN ON 02.28 -->
-  <!-- About Section hidden for now-->
     <section id="about">
         <div class="container cog2">
             <div class="row">
@@ -131,15 +130,13 @@
                 </div> -->
                   
             <div class="row text-left">
-                <div class="col-md-6">
-                    <div id="search">
-                        <span class="fa-stack fa-4x">
-                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                            <a href="#aboutModal3" data-toggle="modal" data-target="#aboutModal3">
-                                <i class="fa fa-wrench fa-stack-1x fa-inverse"></i>
-                            </a>    
-                        </span>
 
+                <div class="col-md-6" id="search">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-wrench fa-stack-1x fa-inverse"></i>
+                        </a>    
+                    </span>
                         <h4 class="service-heading">How it Works</h4>
                         <p class="text-muted">We want to keep things as simple as possible. Anyone can submit the name of a nonprofit. We will ask you a few questions about the organization and, if accepted, it will be added to our project list.  Developers looking to sharpen their skills and gain real world experience, can view all open projects and request to work on a project.  We ask the developer a few questions about their skills and experience. We then make sure the project they are interested in is available and then we let them do what they do best!  When the site is ready, we contact the nonprofit organization to let them take a look at what we've put together for them.</p>
                     </div>
@@ -230,21 +227,31 @@
   
 
     <!-- Portfolio Grid Section -->
-    <section id="portfolio " class="bg-light-gray">
+    <section id="portfolio" class="bg-light-gray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Current Projects</h2>
                     <h3 class="section-subheading text-muted">Nonprofit Organizations in need of high quality web-design services</h3>
                 </div>
-                <button class="filter" data-filter="all">Show All</button>
-                <button class="filter" data-filter=".category-1">Open</button>
-                <button class="filter" data-filter=".category-2">Working</button>
-                <button class="sort" data-sort="default">Default</button>
-                <button class="sort" data-sort="my-order:asc">Ascending Order</button>
-                <button class="sort" data-sort="my-order:desc">Descending Order</button>
-                <button class="sort" data-sort="random">Random Order</button>
+                <!-- filter buttons -->
+                </div class="row proj-sort">
+                    <div class="col-md-6 col-sm-12">
+                      <!--   <h3 class="sort-filter"> Sort by status </h3> -->
+                        <div class="filter btn btn-primary btn-sm" data-filter="all">Show All</div>
+                        <div class="filter btn btn-primary btn-sm" data-filter=".category-1"> Show Open</div>
+                        <div class="filter btn btn-primary btn-sm" data-filter=".category-2">Show working</div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <!-- <h3 class="sort-filter"> Sort by date </h3> -->
+                        <!-- <div class="sort btn btn-primary btn-sm" data-sort="default">Default</div> -->
+                        <div class="sort btn btn-primary btn-sm" data-sort="my-order:asc">Oldest</div>
+                        <div class="sort btn btn-primary btn-sm" data-sort="my-order:desc">Newest</div>
+                        <div class="sort btn btn-primary btn-sm" data-sort="random">Random </div>
+                    </div>
+                </div
             </div>
+            <!-- first project -->
             <div id="mix-it-up2" class="row">
                 <div class="col-md-4 col-sm-6 portfolio-item mix category-1" data-my-order="1">
                     <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
@@ -253,11 +260,11 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/wag-sm.png" class="img-responsive" alt="wag">
-                  <!--   </a> -->
+                        <img src="img/wag-sm.png" class="img-responsive photo" alt="wag">
+                    <!-- </a> -->
                         <div class="portfolio-caption">
                             <h4>Wags4Warriors</h4>
-                            <p class="text-muted">Category:Veteran</p>
+                            <p class="text-muted">Date submitted: Jan 31, 2016</p>
                             <p class="text-muted">Status:open</p>
 
                         </div>
@@ -271,11 +278,11 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/doslocos.jpg" class="img-responsive" alt="">
+                        <img src="img/doslocos.jpg" class="img-responsive photo" alt="">
                     <!-- </a> -->
                         <div class="portfolio-caption">
                             <h4>Dos Locos Design</h4>
-                            <p class="text-muted">Category:Cancer</p>
+                            <p class="text-muted">Date submitted: Feb 3, 2016</p>
                             <p class="text-muted">Status:open</p>
                         </div>
                     </a>
@@ -288,11 +295,11 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/carver.jpg" class="img-responsive" alt="">
+                        <img src="img/carver.jpg" class="img-responsive photo" alt="">
                   <!--   </a> -->
                         <div class="portfolio-caption">
                             <h4>Alamo Area Wood Carvers</h4>
-                            <p class="text-muted">Category: Education</p>
+                            <p class="text-muted">Date submitted: Feb 4, 2016</p>
                             <p class="text-muted">Status: working</p>
                         </div>
                     </a>
@@ -307,11 +314,11 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/meals.png" class="img-responsive" alt="">
+                        <img src="img/meals.png" class="img-responsive photo" alt="">
                     <!-- </a> -->
                         <div class="portfolio-caption">
                             <h4>Meals on Wheels</h4>
-                            <p class="text-muted">Category: Service</p>
+                            <p class="text-muted">Date submitted: Feb 8, 2016</p>
                             <p class="text-muted">Status:working</p>
                         </div>
                     </a>
@@ -324,11 +331,11 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/passion.png" class="img-responsive" alt="">
+                        <img src="img/passion.png" class="img-responsive photo" alt="">
                     <!-- </a> -->
                         <div class="portfolio-caption">
                             <h4>Passion 4 Kids</h4>
-                            <p class="text-muted">Category:Children</p>
+                            <p class="text-muted">Date Submitted: Feb 15, 2016</p>
                             <p class="text-muted">Status:open</p>
                         </div>
                     </a>
@@ -341,11 +348,11 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/project.png" class="img-responsive" alt="">
+                        <img src="img/project.png" class="img-responsive photo" alt="">
                     <!-- </a> -->
                         <div class="portfolio-caption">
                             <h4>Project Quest</h4>
-                            <p class="text-muted">Category:Education</p>
+                            <p class="text-muted">Date submitted: Feb 16, 2016</p>
                             <p class="text-muted">Status:woorking</p>
                         </div>
                     </a>
@@ -360,11 +367,11 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/angels.png" class="img-responsive" alt="">
+                        <img src="img/angels.png" class="img-responsive photo" alt="">
                     <!-- </a> -->
                         <div class="portfolio-caption">
                             <h4>Adoption Angels</h4>
-                            <p class="text-muted">Category:Service</p>
+                            <p class="text-muted">Date submmitted: Feb 21, 2016</p>
                             <p class="text-muted">Status:open</p>
                         </div>
                     </a>
@@ -377,11 +384,11 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/pva.png" class="img-responsive" alt="">
+                        <img src="img/pva.png" class="img-responsive photo" alt="">
                     <!-- </a> -->
                         <div class="portfolio-caption">
                             <h4>Paralyzed Veteran's Association</h4>
-                            <p class="text-muted">Category:Service</p>
+                            <p class="text-muted">Date submitted: Feb 23, 2016</p>
                             <p class="text-muted">Status:working</p>
                         </div>
                     </a>
@@ -394,11 +401,11 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/child.png" class="img-responsive" alt="">
+                        <img src="img/child.png" class="img-responsive photo" alt="">
                     <!-- </a> -->
                         <div class="portfolio-caption">
                             <h4>Military Child Education Coalition</h4>
-                            <p class="text-muted">Category:Military</p>
+                            <p class="text-muted">Date submitted: Mar 1, 2016</p>
                             <p class="text-muted">Status:open</p>
                         </div>
                     </a>
@@ -425,7 +432,7 @@
                         </a>
                     </span>
                     <h4 class="service-heading">Nonprofit</h4>
-                    <p class="text-muted">Know of a nonprofit organization that could benefit from a new website? Let us know. We would love to add their site to our Projects for developers to review.</p>
+                    <p class="text-muted">Know of a nonprofit organization that could benefit from a new website? Let us know. We would love to add their site to our projects for developers to review.</p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
@@ -435,7 +442,7 @@
                         </a>    
                     </span>
                     <h4 class="service-heading">Develop</h4>
-                    <p class="text-muted">Are you a developer looking to build your portfolio? Maybe you want to donate your skills and time to helping a non-profit. Many nonprofit organizations have little funds to spend on web-site updaetes. Your skills and time would be greatly appreciated.</p>
+                    <p class="text-muted">Are you a developer looking to build your portfolio? Maybe you want to donate your skills and time to helping a nonprofit. Many nonprofit organizations have little funds to spend on web-site updates. Your skills and time would be greatly appreciated.</p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
@@ -445,7 +452,7 @@
                         </a>    
                     </span>
                     <h4 class="service-heading">Donate</h4>
-                    <p class="text-muted">This site can't maintain itself.  Help us continue to build brighter futures for non-profit organizations by donating.  All donated funds will be used for site maintenance and upgrades.</p>
+                    <p class="text-muted">This site can't maintain itself.  Help us continue to build brighter futures for nonprofit organizations by donating.  All donated funds will be used for site maintenance and upgrades.</p>
                 </div>
             </div>
         </div>
@@ -517,7 +524,7 @@
     </section> -->
 
     <!-- Clients Aside hidden for now-->
-    <aside class="clients">
+    <!-- <aside class="clients">
         <div class="container">
             <div class="row">
                 <div class="col-md-3 col-sm-6">
@@ -542,7 +549,7 @@
                 </div>
             </div>
         </div>
-    </aside>
+    </aside> -->
     
     <!-- Contact Section -->
     <section id="contact">
@@ -607,7 +614,7 @@
                     <ul class="list-inline social-buttons">
                         <li><a href="#"><i class="fa fa-twitter"></i></a>
                         </li>
-                        <li><a href="#"><i class="fa fa-facebook"></i></a>
+                        <li><a href="http://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
                         </li>
                         <li><a href="#"><i class="fa fa-linkedin"></i></a>
                         </li>
@@ -643,9 +650,9 @@
                         <div class="modal-body">
                             <!-- Project Details Go Here -->
                             <h2>Wags 4 Warriors</h2>
-                            <p class="item-intro text-muted">The war may be over fro us, but the battle has just begun.</p>
+                            <p class="item-intro text-muted">The war may be over for us, but the battle has just begun.</p>
                             <img class="img-responsive img-centered" src="img/portfolio/portfolio1.png" alt="">
-                            <p>This website is an older site that needs to modernized. Actual details about this project can be obtained by contacting non-profit</p>
+                            <p>This website is an older site that needs to modernized. Actual details about this project can be obtained by contacting the nonprofit.</p>
                             <p>
                                 Visit this site at <a href="https://www.wags4warriors.org/">Wags4Warrior.org</a></p>
                             <!-- <ul class="list-inline">
@@ -677,7 +684,7 @@
                             <h2>Dos Locos Designs</h2>
                             <p class="item-intro text-muted">Retail Designer that provides hats for cancer patients.</p>
                             <img class="img-responsive img-centered" src="img/portfolio/portfolio2.jpg" alt="">
-                            <p> Dos Locos Designs is a small shop and does not have a webpage, only a Facebook page. Feel free to contact them and develop their first website!</p>
+                            <p> Dos Locos Designs is a small shop that does not have a webpage; they only a Facebook page. Feel free to contact them and develop their first website!</p>
 
                     <!-- facebook page -->
 
@@ -734,7 +741,7 @@
                             <h2>Meals on Wheels</h2>
                             <p class="item-intro text-muted">More than a Meal <br> Friendship.Safety.Dignity.Love.</p>
                             <img class="img-responsive img-centered" src="img/portfolio/portfolio4.png" alt="">
-                            <p>This is a older website that it a bit crowded and unresposive. It could use some updates and a splash of color</p>
+                            <p>This is an older website that it a bit crowded and unresposive.</p>
                             <p>You can visit this website at <a href="http://www.christianseniorservices.org/?gclid=Cj0KEQiAxrW2BRCFidKbqKyq1YEBEiQAnMDWxmiwi5PCYgdz6KWfkZExoUkLICeNZ9DZRkYfSAG62S0aAiR98P8HAQ">Mealsonwheels.com</a>.</p>
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                         </div>
@@ -788,7 +795,7 @@
                             <h2>Project Quest</h2>
                             <p class="item-intro text-muted">Quality employment through skills training.</p>
                             <img class="img-responsive img-centered" src="img/portfolio/portfolio6.png" alt="">
-                            <p>This is an older, unresponsive design that could use updating to better showcase training offred</p>
+                            <p>This is an older, unresponsive site that could use an updated design to better showcase the training offred.</p>
                             <p>You can view this site at <a href="http://www.questsa.org//">Questsa.org</a>.</p>
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                         </div>
@@ -814,7 +821,7 @@
                             <h2>Adoption Angels</h2>
                             <p class="item-intro text-muted">A full service child placement agency.</p>
                             <img class="img-responsive img-centered" src="img/portfolio/portfolio7.png" alt="">
-                            <p>The Adoption Angels looks good, but lacks the functionality of more modern wensites including responsiveness.  </p>
+                            <p>This site lacks the functionality of more modern websites. The addition of a responsive design would be a great place to start.</p>
                             <p>You can view this site at <a href="http://www.adoptionangels.com//">adoptionangels.com</a>.</p>
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                         </div>
@@ -837,10 +844,10 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <!-- Project Details Go Here -->
-                            <h2>PAralyzed Veteran's Association</h2>
+                            <h2>Paralyzed Veteran's Association</h2>
                             <p class="item-intro text-muted">Help our Heroes.</p>
                             <img class="img-responsive img-centered" src="img/portfolio/portfolio8.png" alt="">
-                            <p>This site has a good foundation and just needs a little work to make it more responsive.</p>
+                            <p>This site has a good foundation. A responsive design and more modernized look would go a long way.</p>
                             <p>You can visit this site at <a href="http://www.pva.org">pva.org</a>.</p>
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                         </div>
@@ -907,7 +914,7 @@
             </div>
          </div>                              
     </div> 
-    <div id="thanks"><p><a data-toggle="modal" href="#aboutModal1" class="btn btn-success btn-sm">Modal powers, activate!</a></p></div>   
+   <!--  <div id="thanks"><p><a data-toggle="modal" href="#aboutModal1" class="btn btn-success btn-sm">Modal powers, activate!</a></p></div>  -->  
 
 <!-- About Modal 2 -->
     <div class="about-modal modal fade" id="aboutModal2" tabindex="-1" role="dialog">
@@ -983,7 +990,7 @@
     <script src="js/contact_me.js"></script>
 
     <!-- mix it up js -->
-    // <!-- <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script> -->
+     <!-- <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script> -->
     <script src="js/jquery.mixitup.min.js"></script>
 
     <!-- Custom Theme JavaScript -->

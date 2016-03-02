@@ -431,7 +431,7 @@ section h3.section-subheading {
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
-   /* position: absolute;*/
+    position: absolute;
     width: 100%;
     height: 20px;
     font-size: 20px;
@@ -451,9 +451,10 @@ section h3.section-subheading {
 }
 
 #portfolio .portfolio-item .portfolio-caption {
-    max-width: 450px;
+   /* max-width: 300px;*/
+   width: 350px;
     margin: 0 auto;
-    background-color: #fff;
+    /*background-color: #fff;*/
     text-align: center;
     padding: 25px
 }
@@ -467,6 +468,7 @@ section h3.section-subheading {
     font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: italic;
     font-size: 16px;
+    color:black;
     margin: 0
 }
 
@@ -482,6 +484,18 @@ section h3.section-subheading {
 
 #mix-it-up2 .mix{
     display: none;
+}
+.proj-sort{
+    display: inline;
+    margin: 15px;
+}
+.sort-filter{
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.photo {
+    width: 350px;
+    height: auto;
 }
 
 /* About */
@@ -852,10 +866,26 @@ label {
     color: white;
     /*margin-left: 15px;*/
 }
+/*small devies (phones and tablets up to 768px) */
+@media screen and  (max-width:768px) {
+    section#contact {
+        height: 800px;
+        margin: 0 0 20px
+    }
+}
 
-#subject {
-   /*height: 100px;*/
-  /* font-size: 15px;*/
+/* devices (screen sizes between 768 and 992) */
+@media screen and  (min-width:768px) {
+    section#contact {
+        height: 700px;
+    }
+}
+
+/* devices (screen sizes 992px and up) */
+@media screen and (min-width: 992px) {
+    section#contact {
+        height: 480px;
+    }
 }
 
 footer {
