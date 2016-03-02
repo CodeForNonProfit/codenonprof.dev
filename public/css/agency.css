@@ -428,7 +428,7 @@ section h3.section-subheading {
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
-   /* position: absolute;*/
+    position: absolute;
     width: 100%;
     height: 20px;
     font-size: 20px;
@@ -448,9 +448,10 @@ section h3.section-subheading {
 }
 
 #portfolio .portfolio-item .portfolio-caption {
-    max-width: 450px;
+   /* max-width: 300px;*/
+   width: 350px;
     margin: 0 auto;
-    background-color: #fff;
+    /*background-color: #fff;*/
     text-align: center;
     padding: 25px
 }
@@ -464,6 +465,7 @@ section h3.section-subheading {
     font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: italic;
     font-size: 16px;
+    color:black;
     margin: 0
 }
 
@@ -479,6 +481,18 @@ section h3.section-subheading {
 
 #mix-it-up2 .mix{
     display: none;
+}
+.proj-sort{
+    display: inline;
+    margin: 15px;
+}
+.sort-filter{
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.photo {
+    width: 350px;
+    height: auto;
 }
 
 /* About */
