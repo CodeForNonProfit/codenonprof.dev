@@ -310,7 +310,7 @@ header {
     -o-background-size: cover;
     text-align: center;
     color: #fff;
-    text-shadow: -.5px -.5px #458B00;
+    text-shadow: 2.0px 2.0px #458B00;
 }
 
 header .intro-text {
@@ -350,7 +350,8 @@ header .intro-text .intro-heading {
         font-style: italic;
         font-size: 3em;
         color: #fff;
-        text-shadow: -.5px -.5px #458B00;
+        text-shadow: -1.5px -1.5px 1px #458B00;
+        font-weight: bolder;
         line-height: 40px;
         margin-bottom: 25px
     }
@@ -360,7 +361,8 @@ header .intro-text .intro-heading {
         font-weight: 300;
         font-size: 65px;
         color: #fff;
-        text-shadow: -.5px -.5px #458B00;
+        text-shadow: -1.5px -1.5px 1px #458B00;
+        font-weight: bolder;
         line-height: 75px;
         margin-bottom: 50px
     }
