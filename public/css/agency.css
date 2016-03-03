@@ -78,7 +78,9 @@ h6 {
 .btn-primary:active,
 .btn-primary:focus,
 .btn-primary:hover,
-.btn-primary.active {
+.btn-primary:visited,
+.btn-primary.active
+ {
     color: #458B00;
     background-color: #222;
     border-color: #222;
@@ -200,6 +202,16 @@ fieldset[disabled] .btn-xl.active {
 .btn-xl .badge {
     color: #458B00;
     background-color: #fff
+}
+
+.spinner {
+    transition: transform .8s ease-in-out;
+}
+
+.spinner:hover {
+    transform: rotate(360deg);
+}
+
 }
 
 .navbar-default {
@@ -538,12 +550,12 @@ section h3.section-subheading {
     background-size: 50%;
     background-position: center;
     background-repeat: no-repeat;
-    transition: transform .8s ease-in-out;
+    /*transition: transform .8s ease-in-out;*/
 }
 
-.cog2:hover {
+/*.cog2:hover {
     transform: rotate(360deg);
-}
+}*/
 
 #cog {
     font-size: 300px;
@@ -558,9 +570,7 @@ section h3.section-subheading {
     padding-top: 0px;
     padding-right: 70px;
     float:right;
-    position: absolute;
-    z-index: 100;
-}
+   }
 
 #users {
     /*margin-top: -340px;*/
@@ -569,6 +579,51 @@ section h3.section-subheading {
     padding-left: 60px;
     float: right;
 }
+
+@media (max-width: 768px) {
+  #lightbulb,
+  #gears,
+  #search,
+  #users {
+    text-align: center;
+    margin: 0px auto;
+    padding: 0px;
+    }
+.cog2 {
+    background-image: none;
+    }
+
+}
+
+@media (min-width: 768px) {
+  #lightbulb,
+  #gears,
+  #search,
+  #users {
+    text-align: center;
+    padding: 0px;
+    }
+ .cog2 {
+    background-image: none;
+    }
+}
+
+@media (min-width: 992px) {
+    .cog2 {
+    background-image: url("/img/cog.png");
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*transition: transform .8s ease-in-out;*/
+}
+
+/*.cog2:hover {
+    transform: rotate(360deg);
+}*/
+
+    }
+}
+
 
 /*.timeline {
     list-style: none;
