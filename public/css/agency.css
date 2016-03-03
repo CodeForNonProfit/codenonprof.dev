@@ -412,10 +412,12 @@ section h3.section-subheading {
 
 /*//portfolio//*/
 
+
+
 #portfolio .portfolio-item {
-    margin: 0 0 35px;
+    margin: 0, 0, 35px;
     padding: 10px;
-    right: 0;
+    right: -25px;
 }
 
 #portfolio .portfolio-item .portfolio-link {
@@ -498,8 +500,25 @@ section h3.section-subheading {
     display: none;
 }
 .proj-sort{
+    text-align: center;
     display: inline;
     margin: 15px;
+}
+.port-fil ul li {
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+    display: inline;
+    padding: 5px;
+    color: black;
+    margin-bottom: 25px;
+
+}
+
+#horizontal-list a {
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: black;
+    font-size: 16px;
+    text-decoration: underline;
 }
 .sort-filter{
     font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
