@@ -239,20 +239,45 @@
                 </div>
                 <!-- filter buttons -->
                 </div class="row proj-sort">
-                    <div class="col-md-6 col-sm-12">
+                    <div class="col-lg-12 col-sm-12 port-fil text-center">
                       <!--   <h3 class="sort-filter"> Sort by status </h3> -->
-                        <div class="filter btn btn-primary btn-sm" data-filter="all">Show All</div>
+                        <!-- <div class="filter btn btn-primary btn-sm" data-filter="all">Show All</div>
                         <div class="filter btn btn-primary btn-sm" data-filter=".category-1"> Show Open</div>
-                        <div class="filter btn btn-primary btn-sm" data-filter=".category-2">Show working</div>
-                    </div>
-                    <div class="col-md-6 col-sm-12">
+                        <div class="filter btn btn-primary btn-sm" data-filter=".category-2">Show working</div> -->
+                    <!-- </div>
+                    <div class="col-md-6 col-sm-12"> -->
                         <!-- <h3 class="sort-filter"> Sort by date </h3> -->
                         <!-- <div class="sort btn btn-primary btn-sm" data-sort="default">Default</div> -->
-                        <div class="sort btn btn-primary btn-sm" data-sort="my-order:asc">Oldest</div>
+                        <!-- <div class="sort btn btn-primary btn-sm" data-sort="my-order:asc">Oldest</div>
                         <div class="sort btn btn-primary btn-sm" data-sort="my-order:desc">Newest</div>
-                        <div class="sort btn btn-primary btn-sm" data-sort="random">Random </div>
+                        <div class="sort btn btn-primary btn-sm" data-sort="random">Random </div> -->
+
+
+                        <!-- trying as anchor tags -->
+                       
+                        <ul id="horizontal-list">
+                        <!-- <li class="hidden">
+                            <a href="#page-top"></a>
+                        </li> -->
+                            <li>
+                                <a class="filter text" data-filter="all" href="#showall">Show All</a> 
+                            </li>
+                            <li>
+                                <a class="filter text" data-filter=".category-1" href="#showopen">Open</a>
+                            </li>
+                            <li>
+                                <a class="filter text" data-filter=".category-2" href="#showworking">Working</a>
+                            </li>
+                            
+                            <li>
+                                <a class="sort" data-sort="my-order:asc" href="#ascending">Oldest</a>
+                            </li>
+                            <li>
+                                <a class="sort" data-sort="my-order:desc" href="#descending">Newest</a>
+                            </li>
+                        </ul>            
                     </div>
-                </div
+                </div>  
             </div>
             <!-- first project -->
             <div id="mix-it-up2" class="row">
