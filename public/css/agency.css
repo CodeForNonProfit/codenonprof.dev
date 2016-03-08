@@ -234,10 +234,10 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .navbar-brand.active {
     color: #458B00;
     text-shadow: -1px -1px #fff;
-}
+}  
 
 .navbar-default .navbar-collapse {
-    border-color: rgba(255, 255, 255, .02)
+    border-color: rgba(255, 255, 255, .02);
 }
 
 .navbar-default .navbar-toggle {
@@ -302,10 +302,12 @@ fieldset[disabled] .btn-xl.active {
     }
     .navbar-default.navbar-shrink {
         background-color: #222;
-        padding: 10px 0
+        padding: 10px 0;
+        
     }
     .navbar-default.navbar-shrink .navbar-brand {
-        font-size: 1.5em
+        font-size: 1.5em;
+
     }
 }
 
