@@ -736,8 +736,8 @@ section#contact .text-danger {
     color: #e74c3c;
 }
 
-label {
-    color: white;
+#purple {
+    color: #fff;
 }
 
 /*small devies (phones and tablets up to 768px) */
