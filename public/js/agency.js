@@ -7,7 +7,6 @@
  // mix it up jQuery
 
 
-
 $(function(){
 
 	// Instantiate MixItUp:
@@ -37,6 +36,7 @@ $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
 
+//code for form modals on get involved section//
 $(document).ready(function() {
 	$('#nominateModal').click (function() {
 		$.ajax({
