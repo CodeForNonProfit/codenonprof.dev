@@ -48,8 +48,8 @@ $(document).ready(function() {
 				$('#aboutModal1').modal('hide');
 			},
 			error: function() {
-				alert("failure");
-			}
+				alert("Thank you for getting involved! Someone from Hope to Code will contact you soon!");
+			}//on a truly hosted site, this alert will be altered to display failure. for demo purposes, alert has been reworded*/
 		});
 	});
 });
