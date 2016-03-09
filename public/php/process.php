@@ -1,7 +1,7 @@
 
 
 <?php
-echo "test";
+var_dump("test");
 $myemail = 'hollyanbryant@gmail.com';
 
 if (isset($_POST['name'])) {

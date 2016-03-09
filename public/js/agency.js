@@ -44,7 +44,7 @@ $(document).ready(function() {
 			url: "/process.php",
 			data: $('form.contact').serialize(),
 			success: function(msg) {
-				$('#thanks').html
+				alert("Thank you for getting involved! Someone from Hope to Code will contact you soon!");
 				$('#aboutModal1').modal('hide');
 			},
 			error: function() {
